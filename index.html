@@ -64,6 +64,9 @@ body{
   margin-top:8px;
   color:#666;
   max-width:420px;
+  display:flex;
+  flex-direction:column;
+  gap:4px;
 }
 .stats{
   display:flex;
@@ -91,29 +94,25 @@ body{
   overflow-x:auto;
   padding-bottom:10px;
 }
+.videos::-webkit-scrollbar{
+  height:8px;
+}
+.videos::-webkit-scrollbar-thumb{
+  background:var(--pink);
+  border-radius:4px;
+}
 .video{
-  min-width:130px;
-  height:230px;
+  min-width:200px;
+  height:120px;
   border-radius:18px;
   overflow:hidden;
   position:relative;
   background:#000;
 }
-.video video{
+.video iframe{
   width:100%;
   height:100%;
-  object-fit:cover;
-}
-.video::after{
-  content:'▶';
-  position:absolute;
-  inset:0;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:2.2rem;
-  color:#fff;
-  background:linear-gradient(transparent,rgba(0,0,0,.4));
+  border:none;
 }
 .socials{
   display:flex;
@@ -150,11 +149,15 @@ body{
   <div class="card">
     <div class="profile-box">
       <div class="avatar">
-        <img src="https://placekitten.com/400/400" alt="profile">
+        <img src="https://img.alfrsantv.com/img/f176571871017141.png" alt="profile">
       </div>
       <div>
-        <div class="name">𝓡ᵉ𝗆o</div>
-        <div class="bio">مساحة أنثوية أنيقة لعرض شخصيتك، اهتماماتك، ولمساتك الإبداعية بأسلوب عصري وناعم.</div>
+        <div class="name">اسمك هنا ✨</div>
+        <div class="bio">
+          <span>ڛٱگۆن في حيآۃ الآخرين گ السكر،حٺى إن اخٺفيت .. تركت طعماً جميلاً !😍🥰🩷🤍</span>
+          <span>جميلٌ أن تبدأ الصداقة بابتسامة، والأجمل منها أن تنتهي بابتسامة، إذا كنت تملك أصدقاء، إذاً أنت غني”.</span>
+          <span>السعادة التي في حياتي هي أن أراك بخير أراك سعيد وان تبقى بجانبي مدى الحياة</span>
+        </div>
         <div class="stats">
           <div class="stat">🎀 Fashion</div>
           <div class="stat">📸 Lifestyle</div>
@@ -163,12 +166,12 @@ body{
       </div>
     </div>
     <div class="section">
-      <h2>🎥 فيديوهاتي (ستايل حالات)</h2>
+      <h2>فيديوهاتي</h2>
       <div class="videos">
-        <div class="video"><video muted src=""></video></div>
-        <div class="video"><video muted src=""></video></div>
-        <div class="video"><video muted src=""></video></div>
-        <div class="video"><video muted src=""></video></div>
+        <div class="video"><iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe></div>
+        <div class="video"><iframe src="https://www.youtube.com/embed/oHg5SJYRHA0" allowfullscreen></iframe></div>
+        <div class="video"><iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ" allowfullscreen></iframe></div>
+        <div class="video"><iframe src="https://www.youtube.com/embed/L_jWHffIx5E" allowfullscreen></iframe></div>
       </div>
     </div>
     <div class="section">
@@ -179,7 +182,7 @@ body{
         <a href="#">WhatsApp</a>
       </div>
     </div>
-    <div class="footer-note">Designed : Mahmoud</div>
+    <div class="footer-note">✨ Designed with love & elegance</div>
   </div>
 </div>
 </body>
